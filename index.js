@@ -29,7 +29,7 @@ gradient: ['green', 'green']})
 say(`VIRUZZ-OFX`, {
 font: 'tiny',
 align: 'center',
-gradient: ['red', 'magenta']})
+gradient: ['red', 'red']})
 
 var isRunning = false
 
