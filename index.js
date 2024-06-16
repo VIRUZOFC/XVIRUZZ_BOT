@@ -78,24 +78,24 @@ const packageJsonObj = JSON.parse(packageJsonData)
 const currentTime = new Date().toLocaleString()
 let lineM = '⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ 》'
 console.log(chalk.green(`╭${lineM}
-┊${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
-┊${chalk.blueBright('┊')}${chalk.yellow(`🖥️ ${os.type()}, ${os.release()} - ${os.arch()}`)}
-┊${chalk.blueBright('┊')}${chalk.yellow(`💾 Total RAM: ${ramInGB.toFixed(2)} GB`)}
-┊${chalk.blueBright('┊')}${chalk.yellow(`💽 Free RAM: ${freeRamInGB.toFixed(2)} GB`)}
-┊${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
-┊${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
-┊${chalk.blueBright('┊')} ${chalk.blue.bold(`🟢INFORMACIÓN :`)}
-┊${chalk.blueBright('┊')} ${chalk.blueBright('┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
-┊${chalk.blueBright('┊')}${chalk.cyan(`💚 Nombre: ${packageJsonObj.name}`)}
-┊${chalk.blueBright('┊')}${chalk.cyan(`🦠 Versión: ${packageJsonObj.version}`)}
-┊${chalk.blueBright('┊')}${chalk.cyan(`💜 Descripción: ${packageJsonObj.description}`)}
-┊${chalk.blueBright('┊')}${chalk.cyan(`☣️ Project Author: ${packageJsonObj.author.name} (@gata_dios)`)}
-┊${chalk.blueBright('┊')}${chalk.blueBright('┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
-┊${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
-┊${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
-┊${chalk.blueBright('┊')}${chalk.cyan(`⏰ Hora Actual :`)}
-┊${chalk.blueBright('┊')}${chalk.cyan(`${currentTime}`)}
-┊${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
+┊${chalk.red('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
+┊${chalk.red('┊')}${chalk.yellow(`🖥️ ${os.type()}, ${os.release()} - ${os.arch()}`)}
+┊${chalk.red('┊')}${chalk.yellow(`💾 Total RAM: ${ramInGB.toFixed(2)} GB`)}
+┊${chalk.red('┊')}${chalk.yellow(`💽 Free RAM: ${freeRamInGB.toFixed(2)} GB`)}
+┊${chalk.red('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
+┊${chalk.red('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
+┊${chalk.red('┊')} ${chalk.green.bold(`🟢INFORMACIÓN :`)}
+┊${chalk.red('┊')} ${chalk.red('┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
+┊${chalk.red('┊')}${chalk.green(`💚 Nombre: X-VIRUS-BOT`)}
+┊${chalk.red('┊')}${chalk.green(`🦠 Versión: 1.0.0`)}
+┊${chalk.red('┊')}${chalk.green(`💜 Descripción: ${packageJsonObj.description}`)}
+┊${chalk.red('┊')}${chalk.green(`☣️ Project Author: VIRUZZ-OFC`)}
+┊${chalk.red('┊')}${chalk.red('┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
+┊${chalk.red('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
+┊${chalk.red('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
+┊${chalk.red('┊')}${chalk.green(`⏰ Hora Actual :`)}
+┊${chalk.red('┊')}${chalk.green(`${currentTime}`)}
+┊${chalk.red('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
 ╰${lineM}`));
 setInterval(() => {}, 1000)
 } catch (err) {
