@@ -25,11 +25,11 @@ const rl = createInterface(process.stdin, process.stdout)
 say('X-VIRUS\nBOT', {
 font: 'block',
 align: 'center',
-gradient: ['green', 'green']})
+colors: ['green', 'green']})
 say(`VIRUZZ-OFX`, {
 font: 'tiny',
 align: 'center',
-gradient: ['red', 'red']})
+colors: ['red', 'red']})
 
 var isRunning = false
 
@@ -41,7 +41,7 @@ let args = [join(__dirname, file), ...process.argv.slice(2)]
 say([process.argv[0], ...args].join(' '), {
 font: 'console',
 align: 'center',
-gradient: ['red', 'magenta']
+colors: ['blue', 'blue']
 })
 setupMaster({exec: args[0], args: args.slice(1),
 })
