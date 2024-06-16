@@ -25,7 +25,7 @@ const rl = createInterface(process.stdin, process.stdout)
 say('X-VIRUS\nBOT', {
 font: 'pallet',
 align: 'center',
-gradient: ['green', 'black']})
+gradient: ['green', 'green']})
 say(`VIRUZZ-OFX`, {
 font: 'console',
 align: 'center',
