@@ -27,7 +27,7 @@ font: 'block',
 align: 'center',
 gradient: ['green', 'green']})
 say(`VIRUZZ-OFX`, {
-font: 'tinny',
+font: 'tiny',
 align: 'center',
 gradient: ['red', 'magenta']})
 
