@@ -137,27 +137,27 @@ if (!methodCodeQR && !methodCode && !fs.existsSync(`./${authFile}/creds.json`)) 
 do {
 let lineM = '⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ 》'
 opcion = await question(`╭${lineM}  
-┊ ${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
-┊ ${chalk.blueBright('┊')} ${chalk.blue.bgBlue.bold.cyan(mid.methodCode1)}
-┊ ${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}   
-┊ ${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}     
-┊ ${chalk.blueBright('┊')} ${chalk.green.bgMagenta.bold.yellow(mid.methodCode2)}
-┊ ${chalk.blueBright('┊')} ${chalk.bold.redBright(`⇢  ${mid.methodCode3} 1:`)} ${chalk.greenBright(mid.methodCode4)}
-┊ ${chalk.blueBright('┊')} ${chalk.bold.redBright(`⇢  ${mid.methodCode3} 2:`)} ${chalk.greenBright(mid.methodCode5)}
-┊ ${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
-┊ ${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}     
-┊ ${chalk.blueBright('┊')} ${chalk.italic.magenta(mid.methodCode6)}
-┊ ${chalk.blueBright('┊')} ${chalk.italic.magenta(mid.methodCode7)}
-┊ ${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
-┊ ${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}    
-┊ ${chalk.blueBright('┊')} ${chalk.red.bgRed.bold.green(mid.methodCode8)}
-┊ ${chalk.blueBright('┊')} ${chalk.italic.cyan(mid.methodCode9)}
-┊ ${chalk.blueBright('┊')} ${chalk.italic.cyan(mid.methodCode10)}
-┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm run qr ${chalk.italic.magenta(`(${mid.methodCode12})`)}`)}
-┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm run code ${chalk.italic.magenta(`(${mid.methodCode13})`)}`)}
-┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm start ${chalk.italic.magenta(`(${mid.methodCode14})`)}`)}
-┊ ${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
-╰${lineM}\n${chalk.bold.magentaBright('---> ')}`)
+┊ ${chalk.red('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
+┊ ${chalk.red('┊')} ${chalk.green.bold.green(mid.methodCode1)}
+┊ ${chalk.red('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}   
+┊ ${chalk.red('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}     
+┊ ${chalk.red('┊')} ${chalk.green.bold(mid.methodCode2)}
+┊ ${chalk.red('┊')} ${chalk.bold.greenBright(`⇢  ${mid.methodCode3} 1:`)} ${chalk.redBright(mid.methodCode4)}
+┊ ${chalk.red('┊')} ${chalk.bold.greenBright(`⇢  ${mid.methodCode3} 2:`)} ${chalk.redBright(mid.methodCode5)}
+┊ ${chalk.red('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
+┊ ${chalk.red('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}     
+┊ ${chalk.red('┊')} ${chalk.italic.greenBright(mid.methodCode6)}
+┊ ${chalk.red('┊')} ${chalk.italic.greenBright(mid.methodCode7)}
+┊ ${chalk.red('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
+┊ ${chalk.red('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}    
+┊ ${chalk.red('┊')} ${chalk.red.bgRed.bold.green(mid.methodCode8)}
+┊ ${chalk.red('┊')} ${chalk.italic.orange(mid.methodCode9)}
+┊ ${chalk.red('┊')} ${chalk.italic.orange(mid.methodCode10)}
+┊ ${chalk.red('┊')} ${chalk.bold.green(`npm run qr ${chalk.italic.red(`(${mid.methodCode12})`)}`)}
+┊ ${chalk.red('┊')} ${chalk.bold.green(`npm run code ${chalk.italic.red(`(${mid.methodCode13})`)}`)}
+┊ ${chalk.red('┊')} ${chalk.bold.green(`npm start ${chalk.italic.red(`(${mid.methodCode14})`)}`)}
+┊ ${chalk.red('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
+╰${lineM}\n${chalk.bold.green('---> ')}`)
 if (!/^[1-2]$/.test(opcion)) {
 console.log(chalk.bold.redBright(mid.methodCode11(chalk)))
 }} while (opcion !== '1' && opcion !== '2' || fs.existsSync(`./${authFile}/creds.json`))
@@ -180,7 +180,7 @@ const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['GataBot-MD', 'Edge', '2.0.0'] : methodCodeQR ? ['GataBot-MD', 'Edge', '2.0.0'] : ['Ubuntu', 'Edge', '110.0.1587.56'],
+browser: opcion == '1' ? ['INFECTED', 'Linux', '1.0.0'] : methodCodeQR ? ['INFECTED', 'Linux', '1.0.0'] : ['Ubuntu', 'Edge', '110.0.1587.56'],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -251,30 +251,30 @@ global.timestamp.connect = new Date
 if (global.db.data == null) loadDatabase()
 if (update.qr != 0 && update.qr != undefined || methodCodeQR) {
 if (opcion == '1' || methodCodeQR) {
-console.log(chalk.bold.yellow(mid.mCodigoQR))}
+console.log(chalk.bold.green(mid.mCodigoQR))}
 }
 if (connection == 'open') {
 console.log(chalk.bold.greenBright(mid.mConexion))}
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode
 if (connection === 'close') {
 if (reason === DisconnectReason.badSession) {
-console.log(chalk.bold.cyanBright(lenguajeGB['smsConexionOFF']()))
+console.log(chalk.bold.greenBright(lenguajeGB['smsConexionOFF']()))
 } else if (reason === DisconnectReason.connectionClosed) {
-console.log(chalk.bold.magentaBright(lenguajeGB['smsConexioncerrar']()))
+console.log(chalk.bold.greenBright(lenguajeGB['smsConexioncerrar']()))
 await global.reloadHandler(true).catch(console.error)
 } else if (reason === DisconnectReason.connectionLost) {
-console.log(chalk.bold.blueBright(lenguajeGB['smsConexionperdida']()))
+console.log(chalk.bold.redBright(lenguajeGB['smsConexionperdida']()))
 await global.reloadHandler(true).catch(console.error)
 } else if (reason === DisconnectReason.connectionReplaced) {
-console.log(chalk.bold.yellowBright(lenguajeGB['smsConexionreem']()))
+console.log(chalk.bold.greenBright(lenguajeGB['smsConexionreem']()))
 } else if (reason === DisconnectReason.loggedOut) {
 console.log(chalk.bold.redBright(lenguajeGB['smsConexionOFF']()))
 await global.reloadHandler(true).catch(console.error)
 } else if (reason === DisconnectReason.restartRequired) {
-console.log(chalk.bold.cyanBright(lenguajeGB['smsConexionreinicio']()))
+console.log(chalk.bold.purpleBright(lenguajeGB['smsConexionreinicio']()))
 await global.reloadHandler(true).catch(console.error)
 } else if (reason === DisconnectReason.timedOut) {
-console.log(chalk.bold.yellowBright(lenguajeGB['smsConexiontiem']()))
+console.log(chalk.bold.redBright(lenguajeGB['smsConexiontiem']()))
 await global.reloadHandler(true).catch(console.error) //process.send('reset')
 } else {
 console.log(chalk.bold.redBright(lenguajeGB['smsConexiondescon'](reason, connection)))
@@ -371,7 +371,7 @@ const err = syntaxerror(readFileSync(dir), filename, {
 sourceType: 'module',
 allowAwaitOutsideFunction: true,
 });
-if (err) conn.logger.error(`SE DETECTO UN ERROR DE SINTAXIS | SYNTAX ERROR WHILE LOADING '${filename}'\n${format(err)}`);
+if (err) conn.logger.error(`SE DETECTO UN ERROR DE SINTAXIS'${filename}'\n${format(err)}`);
 else {
 try {
 const module = (await import(`${global.__filename(dir)}?update=${Date.now()}`));
@@ -447,7 +447,7 @@ unlinkSync(`./GataJadiBot/${directorio}/${fileInDir}`)
 if (SBprekey.length === 0) {
 console.log(chalk.bold.green(lenguajeGB.smspurgeSessionSB1()))
 } else {
-console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeSessionSB2()))
+console.log(chalk.bold.greenBright(lenguajeGB.smspurgeSessionSB2()))
 }} catch (err) {
 console.log(chalk.bold.red(lenguajeGB.smspurgeSessionSB3() + err))
 }}
@@ -481,7 +481,7 @@ originalConsoleMethod.apply(console, arguments)
 setInterval(async () => {
 if (stopped === 'close' || !conn || !conn.user) return
 await clearTmp()
-console.log(chalk.bold.cyanBright(lenguajeGB.smsClearTmp()))}, 1000 * 60 * 4) // 4 min 
+console.log(chalk.bold.redBright(lenguajeGB.smsClearTmp()))}, 1000 * 60 * 4) // 4 min 
 
 //setInterval(async () => {
 //if (stopped === 'close' || !conn || !conn.user) return
@@ -495,7 +495,7 @@ console.log(chalk.bold.cyanBright(lenguajeGB.smsClearTmp()))}, 1000 * 60 * 4) //
 setInterval(async () => {
 if (stopped === 'close' || !conn || !conn.user) return
 await purgeOldFiles()
-console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeOldFiles()))}, 1000 * 60 * 10)
+console.log(chalk.bold.greenBright(lenguajeGB.smspurgeOldFiles()))}, 1000 * 60 * 10)
 
 _quickTest().then(() => conn.logger.info(chalk.bold(lenguajeGB['smsCargando']().trim()))).catch(console.error)
 
