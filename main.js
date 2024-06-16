@@ -151,8 +151,8 @@ opcion = await question(`╭${lineM}
 ┊ ${chalk.red('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
 ┊ ${chalk.red('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}    
 ┊ ${chalk.red('┊')} ${chalk.red.bgRed.bold.green(mid.methodCode8)}
-┊ ${chalk.red('┊')} ${chalk.italic.orange(mid.methodCode9)}
-┊ ${chalk.red('┊')} ${chalk.italic.orange(mid.methodCode10)}
+┊ ${chalk.red('┊')} ${chalk.italic.red(mid.methodCode9)}
+┊ ${chalk.red('┊')} ${chalk.italic.red(mid.methodCode10)}
 ┊ ${chalk.red('┊')} ${chalk.bold.green(`npm run qr ${chalk.italic.red(`(${mid.methodCode12})`)}`)}
 ┊ ${chalk.red('┊')} ${chalk.bold.green(`npm run code ${chalk.italic.red(`(${mid.methodCode13})`)}`)}
 ┊ ${chalk.red('┊')} ${chalk.bold.green(`npm start ${chalk.italic.red(`(${mid.methodCode14})`)}`)}
