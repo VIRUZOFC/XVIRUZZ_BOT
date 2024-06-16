@@ -23,10 +23,10 @@ const rl = createInterface(process.stdin, process.stdout)
 //const port = process.env.PORT || 8080;
 
 say('X-VIRUS\nBOT', {
-font: 'chrome',
+font: 'pallet',
 align: 'center',
-gradient: ['red', 'magenta']})
-say(`Por GataDios`, {
+gradient: ['green', 'black']})
+say(`VIRUZZ-OFX`, {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']})
