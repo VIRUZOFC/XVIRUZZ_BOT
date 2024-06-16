@@ -29,56 +29,8 @@ const roles = {
       '*PLATA III* 🔮': 54,
        '*PLATA II* 🔮': 56,
         '*PLATA I* 🔮': 58,
-    '*ORO V* 🏅': 60,
-     '*ORO IV* 🏅': 62,
-      '*ORO III* 🏅': 64,
-       '*ORO II* 🏅': 66,
-        '*ORO I* 🏅': 68,
-    '*DIAMANTE V* 💎': 70,
-     '*DIAMANTE IV* 💎': 72,
-      '*DIAMANTE III* 💎': 74,
-       '*DIAMANTE II* 💎': 76,
-        '*DIAMANTE I* 💎': 78,
-    '*PRO EN GATABOT V* 😼': 80,
-     '*PRO EN GATABOT IV* 😼': 82,
-      '*PRO EN GATABOT III* 😼': 84,
-       '*PRO EN GATABOT II* 😼': 86,
-        '*PRO EN GATABOT I* 😼': 88,
-    '*SUPER PRO V* 🎩': 90,
-     '*SUPER PRO IV* 🎩': 92,
-      '*SUPER PRO III* 🎩': 94,
-       '*SUPER PRO II* 🎩': 96,
-        '*SUPER PRO I* 🎩': 98,
-    '*LEGENDARIO(A) V* 🛡️': 100,
-     '*LEGENDARIO(A) IV* 🛡️': 102,
-      '*LEGENDARIO(A) III* 🛡️': 104,
-       '*LEGENDARIO(A) II* 🛡️': 106,
-        '*LEGENDARIO(A) I* 🛡️': 108,
-    '*LEYENDA V* 🏆': 110,
-     '*LEYENDA IV* 🏆': 112,
-      '*LEYENDA III* 🏆': 114,
-       '*LEYENDA II* 🏆': 116,
-       '*LEYENDA I* 🏆': 118,
-    '*ESTELAR V* ☄️': 120,
-     '*ESTELAR IV* ☄️': 122,
-      '*ESTELAR III* ☄️': 124,
-       '*ESTELAR II* ☄️': 126,
-        '*ESTELAR I* ☄️': 128,
-    '*TOP ASTRAL V* ⚜️🔱': 130,
-     '*TOP ASTRAL IV* ⚜️🔱': 132,
-      '*TOP ASTRAL III* ⚜️🔱': 134,
-       '*TOP ASTRAL II* ⚜️🔱': 136,
-        '*TOP ASTRAL I* ⚜️🔱': 138,
-    '👑 *ÉLITE GLOBAL V* 🏁': 140,
-     '👑 *ÉLITE GLOBAL IV* 🏁': 145,
-      '👑 *ÉLITE GLOBAL III* 🏁': 150,
-       '👑 *ÉLITE GLOBAL II* 🏁': 155,
-        '👑 *ÉLITE GLOBAL I* 🏁': 160,
-    '👑 *∞ ÉLITE GLOBAL V* 💎🏁': 170,
-     '👑 *∞ ÉLITE GLOBAL IV* 💎🏁': 185,
-    '👑 *∞ ÉLITE GLOBAL III* 💎🏁': 200,
-    '👑 *∞ ÉLITE GLOBAL II* 💎🏁': 250,
-    '👑 *∞ ÉLITE GLOBAL I* 💎🏁': 300
+    '*INFECTADO ☣️*': 60,
+    '*🦠 OWNER 🦠*': 10000
 }
 
 let handler = m => m
@@ -97,8 +49,7 @@ export default handler
 handler.before = function (m, text) {
     let user = global.db.data.users[m.sender]
     let role = (user.level <= 3) ? '*NOVATO(A) III* 🪤'
-        : ((user.level >= 3) && (user.level <= 6)) ? '*NOVATO(A) II* 🪤'
-            : ((user.level >= 6) && (user.level <= 9)) ? '*NOVATO(A) I* 🪤'
+        : ((user.level >= 3) && (user.level <= 6)) ? '*NOVATO(A) II            : ((user.level >= 6) && (user.level <= 9)) ? '*NOVATO(A) I* 🪤'
                 : ((user.level >= 9) && (user.level <= 12)) ? '*APRENDIS III* 🪚'
                     : ((user.level >= 12) && (user.level <= 15)) ? '*APRENDIS II* 🪚'
                         : ((user.level >= 15) && (user.level <= 18)) ? '*APRENDIS I* 🪚'
