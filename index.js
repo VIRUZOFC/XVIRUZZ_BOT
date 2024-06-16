@@ -26,7 +26,7 @@ say('X-VIRUS\nBOT', {
 font: 'block',
 align: 'center',
 colors: ['green', 'green']})
-say(`VIRUZZ-OFX`, {
+say(`VIRUZZ-OFC`, {
 font: 'tiny',
 align: 'center',
 colors: ['red', 'red']})
@@ -77,7 +77,7 @@ const packageJsonData = await fsPromises.readFile(packageJsonPath, 'utf-8')
 const packageJsonObj = JSON.parse(packageJsonData)
 const currentTime = new Date().toLocaleString()
 let lineM = '⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ 》'
-console.log(chalk.yellow(`╭${lineM}
+console.log(chalk.green(`╭${lineM}
 ┊${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
 ┊${chalk.blueBright('┊')}${chalk.yellow(`🖥️ ${os.type()}, ${os.release()} - ${os.arch()}`)}
 ┊${chalk.blueBright('┊')}${chalk.yellow(`💾 Total RAM: ${ramInGB.toFixed(2)} GB`)}
