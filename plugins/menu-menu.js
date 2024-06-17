@@ -597,9 +597,26 @@ ${margen}
 ✓ _${usedPrefix}añadirxp *@tag cantidad*_
 ✓ _${usedPrefix}añadirgatacoins *@tag cantidad*_
 `.trim()
-await conn.sendFile(m.chat, gataImg, 'lp.jpg', menu, fkontak, false, { contextInfo: {mentionedJid, externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', previewType: 0, thumbnail: imagen4, sourceUrl: redesMenu }}})
-//conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menu, fkontak)
-} catch (e) {
+conn.sendMessage(m.chat, {image: { url: "https://telegra.ph/file/7aada8e676c1b6d843b6d.jpg", }, caption: menu, contextInfo: {
+  mentionedJid: [m.sender],
+  isForwarded: true,
+  forwardedNewsletterMessageInfo: {
+    newsletterJid: '',
+    newsletterName: "pene- Team.",
+    serverMessageId: -1,
+  },
+  forwardingScore: 999,
+  externalAdReply: {
+    title: 'Viruz-bot - Bot',
+    body: 'THE VIRUZZ-OFC',
+    thumbnailUrl: "https://telegra.ph/file/7aada8e676c1b6d843b6d.jpg",
+    sourceUrl: 'http://paypal.me/DorratBotOficial',
+    mediaType: 1,
+    renderLargerThumbnail: false,
+  },
+},
+        }, 
+   { quoted: m, })} catch (e) {
 await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeGB.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeGB.smsMensError2()} ` + usedPrefix + command)
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)}
