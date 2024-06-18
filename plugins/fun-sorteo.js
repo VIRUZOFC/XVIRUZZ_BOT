@@ -9,7 +9,7 @@ let ps = groupMetadata.participants.map(v => v.id)
 let a = ps.getRandom()
 let k = Math.floor(Math.random() * 70)
 let vn = `https://hansxd.nasihosting.com/sound/sound${k}.mp3`
-let top = `*\`[ 🥳 ＦＥＬＩＣＩＤＡＤＥＳ 🥳]\`*\n\n${user(a)} 🥳\nAcaba de ganar el sorteo felicitaciones 🎉`
+let top = `*\`[ 👾 ＦＥＬＩＣＩＤＡＤＥＳ 👾 ]\`*\n\n${user(a)} 🥳\nAcaba de ganar el sorteo felicitaciones 🎉`
 let txt = ''
 let count = 0
 for (const c of top) {
@@ -25,7 +25,7 @@ await conn.sendMessage(m.chat, { text: txt.trim(), mentions: conn.parseMention(t
 
 }
 handler.help = ['sorteo']
-handler.command = ['sorteo']
+handler.command = ['sorteo|sortear']
 handler.tags = ['juegos']
 handler.group = true
 
